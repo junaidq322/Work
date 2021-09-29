@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Demo</title>
+        <script lang="javascript" type="text/javascript">
+            hello=(name,age)=>{
+                if(name=="" || age=="")
+                return;
+                document.write("Name is "+name+" and age is "+age);
+            }
+            redirect=()=>window.location="https://www.udemy.com";
+        </script>
+    </head>
+    <body>
+        <p>Click the following function</p>
+        <form>
+            <input type="text" name="t1" placeholder="Enter Name"/><br/>
+            <input type="text" name="t2" placeholder="Enter Age"/><br/>
+            <input type="button" onclick="hello(t1.value,t2.value)" value="Say hello"/>
+            <input type="button" onclick="redirect()" value="Redirect"/>
+        </form>
+    </body>
+</html>
